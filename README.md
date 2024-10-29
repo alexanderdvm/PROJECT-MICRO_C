@@ -66,6 +66,7 @@ El sistema de control de acceso permite la entrada solo a personas que ingresen 
 2. **Configuración de Software:**
    - El código está desarrollado en **MPLAB X IDE** usando **CCS C Compiler** para PIC.
    - Programar el PIC16F877A con el archivo compilado utilizando un programador compatible.
+   - Simulacioon del hardware con **PROTEUS** en el archivo **PARCIAL 2 MICROC PROTEUS [20241018, 20-56-55].pdsprj**
 
 ## Funcionamiento del Sistema
 
