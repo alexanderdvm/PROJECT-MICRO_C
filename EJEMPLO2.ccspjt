@@ -1,0 +1,14 @@
+[PROJECT]
+Target=build\default\production\EJEMPLO2.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.117d
+Compiler=PCM
+[Target Data]
+FileList=EJEMPLO2.c
+[build\default\production\EJEMPLO2.c]
+Type=4
+[mru-list]
+1=build\default\production\EJEMPLO2.c
+[Units]
+Count=1
+1=EJEMPLO2 (main)

@@ -1,0 +1,150 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     lcdlat
+008     PSP_DATA
+008     lcd
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021-024 codigo_ingresado
+025-028 codigo_secreto
+029     indice
+02A     intentos_fallidos
+02B     modo_configuracion
+02C     primer_intento_fallido
+02D     primer_ingreso
+02E-02F @sprintf_string
+030     Configurar_Modo.boton_soltado1
+030     Verificar_Codigo.correcto
+030     lcd_init.i
+030     Ingresar_Codigo.boton_soltado1
+030     Mostrar_Mensaje_Inicial.@SCRATCH1
+030     Reiniciar_Sistema.@SCRATCH1
+031-034 lcd_init.LCD_INIT_STRING
+031     Configurar_Modo.boton_soltado2
+031     Verificar_Codigo.i
+031     Ingresar_Codigo.boton_soltado2
+032     Ingresar_Codigo.boton_soltado3
+032-035 Configurar_Modo.nuevo_codigo
+032     Verificar_Codigo.j
+033     Ingresar_Codigo.digito_actual
+033     Verificar_Codigo.@SCRATCH1
+033     Bloqueo_Sistema.@SCRATCH1
+034     Ingresar_Codigo.@SCRATCH1
+035     lcd_init.@SCRATCH1
+035     Ingresar_Codigo.@SCRATCH2
+036     Configurar_Modo.nuevo_indice
+037     Configurar_Modo.digito_actual
+038     Configurar_Modo.i
+039     Mostrar_Digitos.digito
+039     Configurar_Modo.@SCRATCH1
+03A     @PSTRINGC7_726.@SCRATCH1
+03A     Mostrar_Digitos.@SCRATCH1
+03A     Configurar_Modo.@SCRATCH2
+03B     @PSTRINGC7_726.@SCRATCH2
+03B     Configurar_Modo.@SCRATCH3
+03C     @PSTRINGC7_726.@SCRATCH3
+03D     lcd_putc.c
+03D     @PSTRINGC7_726.@SCRATCH4
+03E     lcd_gotoxy.x
+03E     @delay_ms1.P1
+03F     lcd_gotoxy.y
+040     lcd_gotoxy.address
+041     lcd_gotoxy.@SCRATCH1
+042     lcd_send_byte.address
+043     lcd_send_byte.n
+044     lcd_read_byte.low
+044     lcd_send_byte.@SCRATCH1
+045     lcd_send_nibble.n
+045     lcd_read_byte.high
+046     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const757.call
+00000A  @const762.call
+000012  @const767.call
+00001A  @const768.call
+00001E  @const769.call
+000026  @const770.call
+00002B  @const773.call
+000034  @const774.call
+00003C  @const775.call
+000045  @const777.call
+00004D  @const778.call
+000056  @const784.call
+00005F  @const786.call
+000068  @const787.call
+000070  @delay_ms1
+000085  lcd_send_nibble
+000091  lcd_read_nibble
+000097  lcd_send_byte
+00009D  lcd_read_byte
+0000D7  lcd_init
+000115  lcd_gotoxy
+000127  lcd_putc
+000153  @PSTRINGC7_726
+0001A9  Mostrar_Mensaje_Inicial
+0001C7  Mostrar_Digitos
+0001F3  Configurar_Modo
+00028F  Ingresar_Codigo
+00032C  Verificar_Codigo
+0003A8  Bloqueo_Sistema
+0003D6  Reiniciar_Sistema
+0003EA  MAIN
+0003EA  @cinit1
+0003FE  @cinit2
+
+Project Directory:
+    C:\Users\Gaming 3\OneDrive - Universidad del Norte\Documentos\PIC PROYECTPS\ALEXANDER.X\
+
+Project Files:
+    EJEMPLO2.c                                              [25-oct.-24 09:33  CRC=A623A858]
+    ..\..\..\..\..\..\Program Files (x86)\PICCDEMO\devices\16f877a.h [26-mar.-24 09:13  CRC=7EF3334F]
+    ..\..\..\..\..\..\Program Files (x86)\PICCDEMO\drivers\lcd.c [22-feb.-16 10:05  CRC=D1A6378A]
+
+Source signature=C8634ABB
+Program memory checksum=0000
+Hex file CRC=8C78
+
+Units:
+    C:\Users\Gaming 3\OneDrive - Universidad del Norte\Documentos\PIC PROYECTPS\ALEXANDER.X\EJEMPLO2 (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+    Predefined symbols:
+       #define __16F877A 1
+
+Compiler operating in Evaluation Mode
+To obtain a fully enabled compiler visit www.ccsinfo.com/products
+
+Output Files:
+    XREF file:   build\default\production\EJEMPLO2.xsym
+    Errors:      build\default\production\EJEMPLO2.err
+    Ext Symbols: build\default\production\EJEMPLO2.esym
+    INHX8:       build\default\production\EJEMPLO2.hex
+    Symbols:     build\default\production\EJEMPLO2.sym
+    List:        build\default\production\EJEMPLO2.lst
+    Debug/COFF:  build\default\production\EJEMPLO2.cof
+    Project:     EJEMPLO2.ccspjt
+    Call Tree:   build\default\production\EJEMPLO2.tre
+    Statistics:  build\default\production\EJEMPLO2.STA
