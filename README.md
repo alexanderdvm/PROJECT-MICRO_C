@@ -30,8 +30,8 @@ El sistema de control de acceso permite la entrada solo a personas que ingresen 
 2. **Visualización en LCD:**
    - La pantalla LCD muestra cada dígito ingresado de forma secuencial y mantiene ocultos los primeros dígitos para mayor seguridad. Por ejemplo, si el código ingresado es "3485", la pantalla muestra:
      - Después de "3" y "4": muestra "\*\*34".
-     - Después de "8": muestra "\*\*48".
-     - Después de "5": muestra "\*\*85".
+     - Después de "8": muestra "\*\348".
+     - Después de "5": muestra "3485".
 
 3. **Verificación del Código:**
    - **Código predeterminado:** **4321**
